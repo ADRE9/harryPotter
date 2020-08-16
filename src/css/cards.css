@@ -1,0 +1,25 @@
+.card-grid{
+  position: relative;
+  display:grid;
+  z-index: 1;
+  grid-template-columns: repeat(auto-fit,minmax(10rem,12rem));
+  grid-template-rows: repeat(2,minmax(13rem,1fr));
+  grid-gap:40px 20px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .card-grid{
+    position: relative;
+    display:grid;
+    z-index: 1;
+    grid-template-columns: repeat(2,minmax(7rem,7rem));
+    grid-template-rows: repeat(2,minmax(10rem,1fr));
+    grid-gap:20px 10px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}

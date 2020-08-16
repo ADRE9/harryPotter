@@ -1,0 +1,46 @@
+.form-container{
+  position:relative;
+  display: flex;
+  left:50%;
+  transform: translate(-50%);
+  overflow: hidden;
+  width:40vw;
+  height:10vh;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  width:100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input{
+  border-radius: 50px;
+  border: none;
+  width:30vw;
+  height:40px;
+  opacity: 0.6;
+  padding-left: 20px;
+  font-size: 25;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+:hover.input{
+  box-shadow: white;
+  opacity:0.9;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container{
+    width:80vw;
+  }
+  .form{
+    width:80vw;
+  }
+  .input{
+    width:80vw;
+  }
+}

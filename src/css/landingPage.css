@@ -1,0 +1,58 @@
+*,*::before,::after{
+  margin:0;
+  padding:0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.landingPage::before{
+  content: '';
+  position: absolute;
+  width:100vw;
+  height: 100vh;
+  background-color: black;
+  background-image: url(../assets/KFGYOzq-harry-potter-wallpaper\ \(1\)\ \(1\).jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.sideDisplay{
+  position: relative;
+  width:65vw;
+  height:100vh;
+  left:35vw;
+}
+
+.paginate{
+  position: relative;
+  height:9vh;
+  width:auto;
+  left:50%;
+  top:10%;
+  transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .sideDisplay{
+    position: relative;
+    width:100%;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color: black;
+  }
+
+  .landingPage::before{
+    background-image:none;
+    background-color: black;
+    height:100%;
+    width:100%;
+  }
+  .paginate{
+    padding-top:100px;
+    left:53%;
+  }
+}

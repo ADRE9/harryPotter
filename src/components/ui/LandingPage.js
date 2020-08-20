@@ -17,7 +17,7 @@ class LandingPage extends Component {
           <Cards />
           <div className="row paginate justify-content-center
           align-content-center mt0">
-            <PaginationComponent />
+            <PaginationComponent className="paginate"/>
           </div>
         </div>
       </div>

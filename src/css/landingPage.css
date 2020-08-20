@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 .landingPage::before{
   content: '';
   position: absolute;

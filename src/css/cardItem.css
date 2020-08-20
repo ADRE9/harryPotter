@@ -1,119 +1,105 @@
-.card{
+.cardItem{
   background-color: transparent;
-  position:relative;
   height:13rem;
   width:10rem;
-  border-radius: 5px;
-  justify-self: center;
-  z-index:1;
-  
+  border-radius:5px;
+  perspective: 900px;
 }
 
-
-.cardInner{
+.card-inner{
   position: relative;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  transition: transform 0.4s ease-in;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-.cardBack, .cardFront{
+.cardItem:hover .card-inner{
+  transform: scale(1.03)rotateY(180deg);
+  box-shadow:0px 0px 3px 3px black,0px 0px 8px 2px white,0px 0px 9px 2px white;
+  border-radius:5px;
+}
+
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  
 }
 
-.card:hover .cardInner{
-  transform: scale(1.01)rotateY(180deg);
-  box-shadow:0px 0px 10px 2px rgba(0,0,0,0.3),0px 0px 13px rgba(128,128,128,0.9),0px 0px 15px 2px rgba(255,255,255,0.9);
+.card-front {
+  background-image:linear-gradient(0deg, rgb(100, 65, 165), rgb(42, 8, 69));
+  color: black;
   border-radius:5px;
 }
 
-.cardBack{
-  background-color: #3f0d12;
-  background-image: linear-gradient(0deg, #3f0d12 0%, #a71d31 74%);
-  background-color: #485461;
-
+.card-back {
+  background-image:linear-gradient(0deg, rgb(100, 65, 165), rgb(42, 8, 69));
+  border-radius:5px;
   color: white;
-  border-radius:5px;
   transform: rotateY(180deg);
 }
 
 
-.upperDiv{
+.image{
+  position: absolute;
+  overflow: hidden;
   top:0;
   left:0;
-  width:95%;
+  width:96%;
   height:65%;
-  border-radius: 20px 5px 500px 20px;
-  background-image: radial-gradient(farthest-corner at 40px 40px,
-  rgba(255,255,255,0) 70%,
-  rgba(0,0,0,0.2) ,
-  rgba(0,0,0,0.7)),url(../assets/harryriding.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  border-radius:15px 0px 300px 0px;
+  background-image: url(../assets/harryriding.jpg);
 }
 
-.circleCutOut{
-  top:0;
+.name-container{
+  position: absolute;
+  top:70%;
   left:0;
   width:100%;
-  height:100%;
-  background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
-  background-color: #485461;
-  border-radius: 5px 5px 5px 5px;
-}
-.lowerDiv{
-  padding-top:20px;
-  width: 100%;
-  top:65;
-  left:0;
-  margin:auto;
+  color: white;
 }
 
 .name{
-  width: 100%;
-  text-align: center;
-  color:white;
-  text-shadow: 1px 1px 2px black, 0 0 1em gray, 0 0 0.2em white;
-}
-
-.button{
-  position:absolute;
-  width:80%;
-  height:20%;
-  border:none;
-  border-radius:5px;
-  top:80%;
-  left:50%;
-  color:white;
-  transform: translate(-50%,-50%);
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow:0 0 10px black;
 }
 
 .hogwarts{
-  width:140px;
-  height:140px;
+  width:90%;
+  height:auto;
+  
+}
+.read-more-button{
+  margin-top:20px;
+  width:80%;
+  height:30px;
+  border:none;
+  color:rgb(100, 65, 165);
+  border-radius: 5px;
+  background-color:white;
+  box-shadow:0px 0px 8px  black,0px 0px 9px  white;
+}
+
+.read-more{
+  line-height: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 
 @media only screen and (max-width: 768px) {
-  .card{
+
+  .cardItem{
     height:10rem;
-    width:7rem;
+    width:8rem;
   }
-  .lowerDiv{
-    padding-top:0px;
-  }
-  .hogwarts{
-    width:100px;
-    height:100px;
+  .read-more-button{
+    margin-top:0px;
   }
 }
-
+/*rgb(195, 20, 50), rgb(36, 11, 54)*/

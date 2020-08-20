@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchTerm } from '../../actions';
+import { fetchTerm,fetchActivePage } from '../../actions';
 import '../../css/searchBar.css';
 
 
 class SearchBar extends Component {
 
   onInputChange = (event) => {
-    
     this.props.fetchTerm(event.target.value);
-    
   };
+
   onFormSubmit = (event) => {
     event.preventDefault();
+  };
+
+  onInputClick = () => {
+    this.props.fetchActivePage(1);
   };
 
   render() {
@@ -28,6 +31,7 @@ class SearchBar extends Component {
             className="input"
             type="text"
             value={this.props.searchTerm}
+            onClick={this.onInputClick}
             onChange={this.onInputChange}
             placeholder="Search for Characters,Houses,Spells"
           />
@@ -42,5 +46,5 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {
-  fetchTerm,
+  fetchTerm,fetchActivePage
 })(SearchBar);

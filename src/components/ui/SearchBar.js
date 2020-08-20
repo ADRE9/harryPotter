@@ -8,14 +8,11 @@ class SearchBar extends Component {
 
   onInputChange = (event) => {
     this.props.fetchTerm(event.target.value);
+    this.props.fetchActivePage(1);
   };
 
   onFormSubmit = (event) => {
     event.preventDefault();
-  };
-
-  onInputClick = () => {
-    this.props.fetchActivePage(1);
   };
 
   render() {

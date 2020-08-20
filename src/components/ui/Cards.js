@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CardItem from './CardItem';
-import PaginationComponent from './PaginationComponent';
 import { connect } from 'react-redux';
 import { fetchActiveCharacter } from '../../actions';
 import '../../css/cards.css';

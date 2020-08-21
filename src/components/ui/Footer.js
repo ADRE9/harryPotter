@@ -18,11 +18,11 @@ const Footer = () => {
           LINKS
         </h4>
         <ul>
-          <li><a>CHARACTERS</a></li>
-          <li><a>HOUSES</a></li>
-          <li><a>SPELLS</a></li>
-          <li><a>SORTING HAT</a></li>
-          <li><a>ABOUT</a></li>
+          <li><a href="https://5f3fe525cbcc54000728d142--stoic-shockley-0fe763.netlify.app/">CHARACTERS</a></li>
+          <li><a href="https://5f3fe525cbcc54000728d142--stoic-shockley-0fe763.netlify.app/">HOUSES</a></li>
+          <li><a href="https://5f3fe525cbcc54000728d142--stoic-shockley-0fe763.netlify.app/">SPELLS</a></li>
+          <li><a href="https://5f3fe525cbcc54000728d142--stoic-shockley-0fe763.netlify.app/">SORTING HAT</a></li>
+          <li><a href="https://5f3fe525cbcc54000728d142--stoic-shockley-0fe763.netlify.app/">ABOUT</a></li>
         </ul>
       </div>
       <div className="social-grid">

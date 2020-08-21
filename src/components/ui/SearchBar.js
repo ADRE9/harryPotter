@@ -19,7 +19,6 @@ class SearchBar extends Component {
     console.log(this.props.searchTerm);
     console.log(this.props.filteredChar);
     return (
-      <div className="form-container">
         <form
           className="form"
           onSubmit={this.onFormSubmit}
@@ -33,7 +32,6 @@ class SearchBar extends Component {
             placeholder="Search for Characters,Houses,Spells"
           />
         </form>
-      </div>
     );
   };
 };

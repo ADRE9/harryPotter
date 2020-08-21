@@ -1,14 +1,4 @@
-.form-container{
-  position:relative;
-  display: flex;
-  left:50%;
-  transform: translate(-50%);
-  overflow: hidden;
-  width:40vw;
-  height:10vh;
-  justify-content: center;
-  align-items: center;
-}
+
 .form{
   width:100%;
   margin: auto;

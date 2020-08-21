@@ -6,11 +6,6 @@ import '../../css/cards.css';
 
 class Cards extends Component {
 
-  componentDidUpdate() {
-    
-  }
-
-
   render() {
     if (this.props.characters.length===195) {
       const filteredCard = this.props.characters.filter((character) => {

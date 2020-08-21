@@ -12,12 +12,15 @@ class LandingPage extends Component {
     return (
       <div className="landingPage">
         <div className="sideDisplay">
-          <img src={logo} alt="HARRY POTTER LOGO" className="logo"/>
-          <SearchBar />
+          <img src={logo} alt="HARRY POTTER LOGO" className="logo" />
+          <div className=" form-div row d-flex justify-content-center">
+            <SearchBar/>
+          </div>
           <Cards />
-          <div className="row paginate justify-content-center
-          align-content-center mt0">
-            <PaginationComponent className="paginate"/>
+          <div className="paginate-container row d-flex justify-content-center">
+            <div className="">
+              <PaginationComponent/>
+            </div>
           </div>
         </div>
       </div>

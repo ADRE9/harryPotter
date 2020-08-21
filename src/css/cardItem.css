@@ -4,6 +4,7 @@
   width:10rem;
   border-radius:5px;
   perspective: 900px;
+  justify-self: center;
 }
 
 .card-inner{

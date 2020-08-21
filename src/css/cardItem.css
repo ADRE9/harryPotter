@@ -40,7 +40,7 @@
 }
 
 .card-back {
-  background-image:linear-gradient(180deg, rgb(100, 65, 165), rgb(42, 8, 69));
+  background-image:linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
   border-radius:5px;
   color: white;
   transform: rotateY(180deg);

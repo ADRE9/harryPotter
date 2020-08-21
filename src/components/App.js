@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/app.css';
 import LandingPage from './ui/LandingPage';
+import Footer from './ui/Footer';
 import { connect } from "react-redux";
 import { fetchCharacters } from '../actions';
 
@@ -13,7 +14,14 @@ class App extends Component {
     console.log(this.props.characters);
     return (
       <div className='App'>
-        <LandingPage/>
+        
+        <div>
+        <LandingPage />
+        </div>
+        <div>
+          <Footer/>
+        </div>
+        
       </div>
     );
   };

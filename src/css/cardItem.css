@@ -32,7 +32,9 @@
 }
 
 .card-front {
-  background-image:linear-gradient(0deg, rgb(100, 65, 165), rgb(42, 8, 69));
+  background-color: #3f0d12;
+  background-image: linear-gradient(0deg, #3f0d12 0%, #a71d31 74%);
+
   color: black;
   border-radius:5px;
 }

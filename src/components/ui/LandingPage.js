@@ -16,7 +16,9 @@ class LandingPage extends Component {
           <div className=" form-div row d-flex justify-content-center">
             <SearchBar/>
           </div>
-          <Cards />
+          <div className="card-container">
+            <Cards />
+          </div>
           <div className="paginate-container row d-flex justify-content-center">
             <div className="">
               <PaginationComponent/>

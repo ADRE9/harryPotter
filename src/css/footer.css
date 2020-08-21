@@ -1,0 +1,76 @@
+.Footer{
+  position:relative;
+  display:grid;
+  grid-template-columns:auto;
+  grid-template-areas: "saninLogo links social";
+  width:100vw;
+  justify-items: center;
+  align-items: center;
+  background-image:linear-gradient(0deg, rgb(100, 65, 165), rgb(42, 8, 69));
+  min-height: 20vh;
+}
+
+.logo-grid{
+grid-area:saninLogo;
+padding:30px 0px 10px 0px;
+}
+
+.links-grid{
+  grid-area:links;
+  padding:30px 0px 10px 0px;
+}
+
+h4{
+  padding-top:20px;
+  text-align: center;
+  color:white;
+}
+
+ul{
+  list-style: none;
+  color:white;
+  text-align: center;
+}
+li{
+  color:white;
+}
+li:hover{
+  transform:scale(1.2);
+  text-shadow: white 1px 0 10px;
+  color:white;
+}
+
+a{
+  color:white;
+}
+a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+
+.social-grid{
+  grid-area:social;
+  padding:30px 0px 10px 0px;
+}
+
+.social-button{
+  padding:0px 10px 0px 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .Footer{
+    grid-template-areas:
+     "links"
+     "social"
+     "saninLogo";
+  }
+  .logo-grid {
+    min-height: 20vh;
+    padding:25px 0px 50px 0px;
+  }
+  .links-grid{
+
+  }
+}

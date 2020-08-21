@@ -18,11 +18,11 @@ const Footer = () => {
           LINKS
         </h4>
         <ul>
-          <li><a href="#">CHARACTERS</a></li>
-          <li><a href="#">HOUSES</a></li>
-          <li><a href="#">SPELLS</a></li>
-          <li><a href="#">SORTING HAT</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <li><a>CHARACTERS</a></li>
+          <li><a>HOUSES</a></li>
+          <li><a>SPELLS</a></li>
+          <li><a>SORTING HAT</a></li>
+          <li><a>ABOUT</a></li>
         </ul>
       </div>
       <div className="social-grid">
